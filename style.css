@@ -117,3 +117,23 @@
     font-weight:bolder;
     border:none
 }
+
+/* box 5 */
+.nav-signin{
+    height:50px;
+    width:131.53px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.sign-first{
+    color:#CCCCCC;
+    font-size:12px;
+    margin-left:3px;
+}
+.sign-second{
+    color:#FFFFFF;
+    font-size:14px;
+    margin-left:2px;
+    font-weight:bolder;
+}
