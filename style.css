@@ -147,3 +147,23 @@
     flex-direction:column;
     justify-content:center;
 }
+
+/* box 7 */
+
+.nav-cart{
+    height:50px;
+    width:70px;
+    display:flex;  
+    justify-content:center; 
+}
+.cart-symbol{
+    margin-top:6px;
+    font-size:1.8rem;
+}
+.cart-text{
+    margin-top:20px;
+    color:#FFFFFF;
+    font-size:14px;
+    margin-left:2px;
+    font-weight:bolder;
+}
