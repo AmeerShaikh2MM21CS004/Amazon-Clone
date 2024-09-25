@@ -63,7 +63,7 @@
 .nav-search{
     display:flex;
     justify-content:space-evenly;
-    background-color:pink;
+    background-color:#E6E6E6;
     height:40px;
     width:620px;
     border-radius:4px;
@@ -101,6 +101,10 @@
 } 
 .search-icon:hover{
     background-color:#fcaa40;
+}
+.nav-input:focus{
+    border:1px solid #fcaa40;
+    outline:2px solid #fcaa40;
 }
 
 
@@ -171,5 +175,33 @@
     color:#FFFFFF;
     font-size:14px;
     margin-left:2px;
+    font-weight:bolder;
+}
+
+/* pannel */
+
+.pannel{
+    height:39px;
+    background-color:#222f3d;
+    color:#FFFFFF;
+    display:flex;
+    align-items:center;
+}
+.pannel-all{
+    margin-left:7px;
+}
+.pannel-options p{
+    display:inline;
+    margin-left:15px;
+}
+
+.pannel-options{
+    width:85%;
+    font-size:0.9rem;
+    font-weight:350;
+}
+
+.pannel-deals{
+    font-size:1rem;
     font-weight:bolder;
 }
