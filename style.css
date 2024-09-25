@@ -126,14 +126,24 @@
     flex-direction:column;
     justify-content:center;
 }
-.sign-first{
+.nav-first{
+    font-weight:bold;
     color:#CCCCCC;
-    font-size:12px;
+    font-size:0.7rem;
     margin-left:3px;
 }
-.sign-second{
+.nav-second{
     color:#FFFFFF;
     font-size:14px;
     margin-left:2px;
     font-weight:bolder;
+}
+
+/* box 6 */
+.nav-return{
+    height:50px;
+    width:76.95px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
