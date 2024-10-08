@@ -1,6 +1,6 @@
 # Amazon Clone
 
-This project is a frontend Amazon homepage clone built with HTML and CSS. It replicates the design and layout of the Amazon website, including a responsive header, search bar, product categories, and footer.
+This project is a frontend Amazon homepage clone built with HTML and CSS, with Django as the backend. It replicates the design and layout of the Amazon website, including a responsive header, search bar, product categories, and footer.
 
 ## Features
 
@@ -19,7 +19,7 @@ This project is a frontend Amazon homepage clone built with HTML and CSS. It rep
 - **CSS Styling:**
   - Font Awesome icons used for search, cart, and location.
   - Flexbox is used for layout and alignment across the navbar, product sections, and footer.
-  
+
 ## Screenshots
 
 Here are some screenshots of the Amazon Clone:
@@ -35,7 +35,8 @@ Here are some screenshots of the Amazon Clone:
 - **HTML5**: Structure and content of the webpage.
 - **CSS3**: Styling the layout, responsiveness, and hover effects.
 - **Font Awesome**: Icons for cart, search, and location.
-  
+- **Django**: Backend framework for handling server-side logic and database interactions.
+
 ## Installation and Setup
 
 1. Clone the repository:
