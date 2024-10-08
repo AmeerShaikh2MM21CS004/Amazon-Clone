@@ -25,10 +25,10 @@ This project is a frontend Amazon homepage clone built with HTML and CSS. It rep
 Here are some screenshots of the Amazon Clone:
 
 ### 1. Homepage (Header, Search Bar, and Product Categories)
-![Homepage Screenshot](images/1.png)
+![Homepage Screenshot](static/images/1.png)
 
 ### 2. Footer Section
-![Footer Screenshot](images/2.png)
+![Footer Screenshot](static/images/2.png)
 
 ## Technologies Used
 
