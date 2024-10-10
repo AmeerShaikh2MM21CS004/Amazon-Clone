@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.under_dev-section{
+    margin-left:10px;
+    background-image:url("images/under-dev.png");
+    background-size:auto;
+    height:80vh;
+    width:98%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}

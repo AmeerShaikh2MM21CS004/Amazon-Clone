@@ -20,5 +20,8 @@ from AmazonClone import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.home)
+    path("",views.home,name="home_page"),
+    path("sign-in/",views.sign_in,name="signin"),
+    path("return_ord/",views.return_ord,name="return-ord"),
+    path("cart/",views.cart,name="cart")
 ]

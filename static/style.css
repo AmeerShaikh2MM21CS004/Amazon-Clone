@@ -3,7 +3,10 @@
     font-family:Arial;
     border:border-box;
 }
-
+a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
 /* navbar */
 .navbar{
     height:60px;
