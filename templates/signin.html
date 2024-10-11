@@ -11,15 +11,20 @@
     {% include "header.html" %}
 
 {% block content %}
-            <!-- <h1 style="text-align:center">this is signin page</h1>
-            <div class="under_dev-section"></div> -->
+            {% if error %}
+                        <div class="error">
+                            <p>Username should not be empty</p>
+                        </div>
+            {% endif %}
             <div class="signin_form">
-                <form method="POST">
-                    {% csrf_token %}
+                <form method="POST" action="{% url 'userdata' %}">
+                <!-- <form method="POST">    -->
+                    {% csrf_token %}    
                     <label>Username:</label>
                     <input type="text" name="username">
                     <label>password:</label>
                     <input type="password" name="paswword">
+                    {{form}}
                     <button>Sign in</button>
                 </form>
             </div>
