@@ -41,8 +41,13 @@
         </div>
         <div class="nav-signin border">
             <a href="{% url 'signin' %}">
-            <p class="nav-first"><span>Hello, sign in</span></p>
-            <p class="nav-second">Account & Lists</p>
+                {% if username %}
+                     <p class="nav-first"><span>Welcome, {{username}}</span></p>
+                     <p class="nav-second">Account & Lists</p>
+                {% else %}
+                    <p class="nav-first"><span>Hello, Sign in</span></p>
+                    <p class="nav-second">Account & Lists</p>
+                {% endif %}
             </a>
         </div>
         <div class="nav-return border">

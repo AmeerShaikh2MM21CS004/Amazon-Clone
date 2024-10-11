@@ -1,0 +1,10 @@
+.signin_form{
+    height:200px;
+    width:600px;
+    margin-top:50px;
+    margin-left:500px;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/static/under_dev.css">
+    <link rel="stylesheet" href="/static/sign_in.css">
 </head>
 <body>
     {% include "header.html" %}
 
 {% block content %}
-            <h1 style="text-align:center">this is signin page</h1>
-            <div class="under_dev-section"></div>
+            <!-- <h1 style="text-align:center">this is signin page</h1>
+            <div class="under_dev-section"></div> -->
+            <div class="signin_form">
+                <form method="POST">
+                    {% csrf_token %}
+                    <label>Username:</label>
+                    <input type="text" name="username">
+                    <label>password:</label>
+                    <input type="password" name="paswword">
+                    <button>Sign in</button>
+                </form>
+            </div>
 {% endblock %}
 
 {% include "footer.html" %}
