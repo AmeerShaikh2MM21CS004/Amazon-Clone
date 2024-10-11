@@ -17,45 +17,57 @@
         <div class="panel2-div1 pn2">
         <ul>
             <p>Get to Know Us</p>
-            <a>Careers</a>
+            {% for n in servicedata %}
+                <a>{{n.get_to_know_us}}</a>
+            {% endfor %}
+            <!-- <a>Careers</a>
             <a>Blog</a>
             <a>About Amazon</a>
             <a>Investor Relations</a>
             <a>Amazon Devices</a>
-            <a>Amazon Science</a>
+            <a>Amazon Science</a> -->
         </ul>
         </div>
         <div class="panel2-div2 pn2">
             <ul>
                 <p>Make Money with Us</p>
-                <a>Sell products on Amazon</a>
+                {% for n in servicedata %}
+                    <a>{{n.make_money_with_us}}</a>
+                {% endfor %}
+                <!-- <a>Sell products on Amazon</a>
                 <a>Sell on Amazon Business</a>
                 <a>Sell apps on Amazon</a>
                 <a>Become an Affiliate</a>
                 <a>Advertise Your Products</a>
                 <a>Self-Publish with Us</a>
                 <a>Host an Amazon Hub</a>
-                <a>› See More Make Money with Us</a>
+                <a>› See More Make Money with Us</a> -->
             </ul>
         </div>
         <div class="panel2-div3 pn2">
                 <ul>
                     <p>Amazon Payment Products</p>
-                    <a>Amazon Business Card</a>
+                    {% for n in servicedata %}
+                        <a>{{n.amazon_payment_products}}</a>
+                    {% endfor %}
+                    <!-- <a>Amazon Business Card</a>
                     <a>Shop with Points</a>
                     <a>Reload Your Balance</a>
-                    <a>Amazon Currency Converter</a>
+                    <a>Amazon Currency Converter</a> -->
                 </ul>
             </div>
             <div class="panel2-div4 pn2">
                     <ul>
                         <p>Let Us Help You</p>
-                        <a>Amazon and COVID-19</a>
+                        {% for n in servicedata %}
+                            <a>{{n.let_us_help_you}}</a>
+                        {% endfor %}
+                        <!-- <a>Amazon and COVID-19</a>
                         <a>Your Orders</a>
                         <a>Shipping Rates & Policies</a>
                         <a>Returns & Replacements</a>
                         <a>Manage Your Content and Devices</a>
-                        <a>Help</a>
+                        <a>Help</a> -->
                     </ul>
             </div>
     </div>
