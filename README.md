@@ -43,3 +43,7 @@ Here are some screenshots of the Amazon Clone:
 
    ```bash
    git clone https://github.com/your-username/amazon-clone.git
+
+## Admin panel Credential   
+- **username**: admin.
+- **password**: admin123.
