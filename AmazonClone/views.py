@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect,HttpResponse
 from .forms import userForm
-
-global username
+from amazon_service_footer.models import Service
 
 def home(request):
+    serviceData=Service.objects.all()
+    
     if request.method=="GET":
          username=request.GET.get("user")
-    return render(request,"index.html",{"username":username})
+    return render(request,"index.html",{"username":username,"servicedata":serviceData})
 
 def sign_in(request):
 
