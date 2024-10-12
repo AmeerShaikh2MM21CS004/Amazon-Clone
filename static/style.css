@@ -267,6 +267,7 @@ a{
     font-size:13px;
     color:#007185;
 }
+
 .box-content h2{
     font-size:21px;
 }
@@ -309,6 +310,9 @@ ul a{
     font-size:14px;
     margin-top:10px;
     color: #DDDDDD;
+}
+ul a:hover{
+    text-decoration: underline;
 }
 ul p{
     margin-top:50px;
@@ -402,6 +406,7 @@ ul p{
     margin-top:15px;
 }
 .copyright{
+
     display:flex;
     justify-content:center;
     margin-top:7px;
@@ -409,42 +414,23 @@ ul p{
 
 .foot1-panel4{
     background-color:#131A22;
-    height:100px;
-    width:100%;
-}
-.foot2-panel4{
-    background-color:#131A22;
-    height:100px;
-    width:100%;
-}
-.foot3-panel4{
-    background-color:#131A22;
-    height:100px;
-    width:100%;
-}
-.foot4-panel4{
-    background-color:#131A22;
-    height:150px;
-    width:100%;
+    height:60vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
 }
 
 .foot1-pan4div{
+    height:60vmin;
+    width:98vmin;
     display:flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:2vmin;
 }
-.foot2-pan4div{
-    display:flex;
-    justify-content:space-evenly;
-}
-.foot3-pan4div{
-    display:flex;
-    justify-content:space-evenly;
-}
-.foot4-pan4div{
-    display:flex;
-    justify-content:space-evenly;
-}
+
 .foot-pan1p{
     color:#DDDDDD;
 }
@@ -457,46 +443,10 @@ ul p{
     width:72.29px;
 }
 .pan2{
-    margin-top:30px;
+    /* margin-top:30px;  */
     font-size:12px;
     color: #999999;
-    height:67.2px;
-    width:91.54px;
+    height:12vmin;
+    width:12vmin;
+    border:none;
 }
-.pan3{
-    margin-top:30px;
-    font-size:12px;
-    color: #999999;
-    height:67.2px;
-    width:97.65px;
-}
-
-.pan4{
-    margin-top:30px;
-    font-size:12px;
-    color: #999999;
-    height:67.2px;
-    width:72.83px;
-}
-.pan5{
-    margin-top:30px;
-    font-size:12px;
-    color: #999999;
-    height:67.2px;
-    width:119.19px;
-}
-.pan6{
-    margin-top:30px;
-    font-size:12px;
-    color: #999999;
-    height:67.2px;
-    width:90.03px;
-}
-.pan7{
-    margin-top:30px;
-    font-size:12px;
-    color: #999999;
-    height:67.2px;
-    width:109.18px;
-}
-

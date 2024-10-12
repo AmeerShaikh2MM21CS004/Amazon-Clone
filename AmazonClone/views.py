@@ -2,13 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect,HttpResponse
 from .forms import userForm
 from amazon_service_footer.models import Service
+from amazon_footer_data.models import Footer_Block
 
 def home(request):
     serviceData=Service.objects.all()
-    
+    footer_service=Footer_Block.objects.all()
+
     if request.method=="GET":
          username=request.GET.get("user")
-    return render(request,"index.html",{"username":username,"servicedata":serviceData})
+    return render(request,"index.html",{"username":username,"servicedata":serviceData,'footer_block':footer_service})
 
 def sign_in(request):
 

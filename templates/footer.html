@@ -20,28 +20,14 @@
             {% for n in servicedata %}
                 <a>{{n.get_to_know_us}}</a>
             {% endfor %}
-            <!-- <a>Careers</a>
-            <a>Blog</a>
-            <a>About Amazon</a>
-            <a>Investor Relations</a>
-            <a>Amazon Devices</a>
-            <a>Amazon Science</a> -->
         </ul>
-        </div>
+        </div> 
         <div class="panel2-div2 pn2">
             <ul>
                 <p>Make Money with Us</p>
                 {% for n in servicedata %}
                     <a>{{n.make_money_with_us}}</a>
                 {% endfor %}
-                <!-- <a>Sell products on Amazon</a>
-                <a>Sell on Amazon Business</a>
-                <a>Sell apps on Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Advertise Your Products</a>
-                <a>Self-Publish with Us</a>
-                <a>Host an Amazon Hub</a>
-                <a>› See More Make Money with Us</a> -->
             </ul>
         </div>
         <div class="panel2-div3 pn2">
@@ -50,10 +36,6 @@
                     {% for n in servicedata %}
                         <a>{{n.amazon_payment_products}}</a>
                     {% endfor %}
-                    <!-- <a>Amazon Business Card</a>
-                    <a>Shop with Points</a>
-                    <a>Reload Your Balance</a>
-                    <a>Amazon Currency Converter</a> -->
                 </ul>
             </div>
             <div class="panel2-div4 pn2">
@@ -62,12 +44,6 @@
                         {% for n in servicedata %}
                             <a>{{n.let_us_help_you}}</a>
                         {% endfor %}
-                        <!-- <a>Amazon and COVID-19</a>
-                        <a>Your Orders</a>
-                        <a>Shipping Rates & Policies</a>
-                        <a>Returns & Replacements</a>
-                        <a>Manage Your Content and Devices</a>
-                        <a>Help</a> -->
                     </ul>
             </div>
     </div>
@@ -96,15 +72,23 @@
     </div>
     <div class="foot1-panel4">
       <div class="foot1-pan4div">
-        <div class="pan2">
-                <p class="foot-pan1p">Amazon Music</p>
-                <p class="foot-pan2p">stream millions of songs</p>
+        {% for n in footer_block %}
+             <div class="pan2">
+                    <p class="foot-pan1p">{{n.Heading}}</p>
+                    <p class="foot-pan2p">{{n.Desc}}</p>
+             </div>
+        {% endfor %} 
+            </div>
+    </div>
+        <!-- <div class="pan2">
+            <p class="foot-pan1p">Amazon Music</p>
+            <p class="foot-pan2p">stream millions of songs</p>
         </div>
         <div class="pan2">
             <p class="foot-pan1p">Amazon Adds</p>
             <p class="foot-pan2p">Reach customers
                 wherever they
-                spend their time	</p>
+                spend their time</p>
         </div>
         <div class="pan3">
             <p class="foot-pan1p">6pm</p>
@@ -247,7 +231,7 @@
             <p class="foot-pan2p"></p>
         </div>
         </div>
-      </div> 
+      </div> -->
     <div class="foot-panel5">
         <div class="pages">
             <a>Conditions of Use</a>

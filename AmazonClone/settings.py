@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'amazon_service_footer'
+    'amazon_service_footer',
+    'amazon_footer_data'
+    
 ]
 
 MIDDLEWARE = [
