@@ -4,14 +4,16 @@ from .forms import userForm
 from amazon_service_footer.models import Service
 from amazon_footer_data.models import Footer_Block
 from user_contact.models import UseerDetails
+from shopping_category.models import Shopping_section
 
 def home(request):
     serviceData=Service.objects.all()
     footer_service=Footer_Block.objects.all()
+    shop_categ=Shopping_section.objects.all()
 
     if request.method=="GET":
          username=request.GET.get("user")
-    return render(request,"index.html",{"username":username,"servicedata":serviceData,'footer_block':footer_service})
+    return render(request,"index.html",{"username":username,"servicedata":serviceData,'footer_block':footer_service,'shop_categ':shop_categ})
 
 def sign_in(request):
 

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'amazon_service_footer',
     'amazon_footer_data',
-    'user_contact'
+    'user_contact',
+    'shopping_category'
     
 ]
 
@@ -129,3 +130,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS=[
     BASE_DIR,"static"
 ]
+
+MEDIA_ROOT=BASE_DIR/"media"
+
+MEDIA_URL="/media/"

@@ -18,66 +18,17 @@
     </div>
 
     <div class="shopping-section">
-        <div class="box">
-            <div class="box-content">
-                <h2>Clothes</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box1_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box2_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box3_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Electronics</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box4_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
+        <div class="box-content {% if shop_categ|length < 4 %}fewer-than-four{% endif %}">
+            {% for n in shop_categ %}
+                <div class="box">
+                    <h2>{{n.category_name}}</h2>
+                    <div class="box1-img"><img src="/media/{{n.shop_categ_img}}"></div>
+                    <p><a>see more</a></p>
+                </div>
+            {% endfor %}
         </div>
     </div>
-
-    <div class="shopping-section1">
-        <div class="box">
-            <div class="box-content">
-                <h2>Beauty Picks</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box5_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Pet Care</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box6_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>New Arrival In Toys</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box7_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Discover Fashion Trends</h2>
-                <div class="box1-img" style="background-image:url('/static/images/box8_image.jpg')"></div>
-                <p><a>shop now</a></p>
-            </div>
-        </div>
-    </div>
+  
     {% endblock %}
 </body>
 </html>
