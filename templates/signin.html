@@ -18,13 +18,11 @@
             {% endif %}
             <div class="signin_form">
                 <form method="POST" action="{% url 'userdata' %}">
-                <!-- <form method="POST">    -->
                     {% csrf_token %}    
                     <label>Username:</label>
                     <input type="text" name="username">
                     <label>password:</label>
-                    <input type="password" name="paswword">
-                    {{form}}
+                    <input type="password" name="password">
                     <button>Sign in</button>
                 </form>
             </div>

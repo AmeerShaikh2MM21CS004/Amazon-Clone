@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'amazon_service_footer',
-    'amazon_footer_data'
+    'amazon_footer_data',
+    'user_contact'
     
 ]
 
