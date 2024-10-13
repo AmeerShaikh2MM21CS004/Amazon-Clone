@@ -45,5 +45,8 @@ Here are some screenshots of the Amazon Clone:
    git clone https://github.com/your-username/amazon-clone.git
 
 ## Admin panel Credential   
+  to become Admin to manage database run python manage.py createsuperuser command in terminal and add your credential
+  ### example
 - **username**: admin.
 - **password**: admin123.
+- **email**:admin123@gmail.com

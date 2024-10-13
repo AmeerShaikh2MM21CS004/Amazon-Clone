@@ -426,7 +426,7 @@ ul p{
 
 .foot1-panel4{
     background-color:#131A22;
-    height:60vh;
+    height:auto;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
